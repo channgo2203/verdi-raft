@@ -14,11 +14,11 @@ build: [
 install: [ make "install" ]
 remove: [ "sh" "-c" "rm -rf '%{lib}%/coq/user-contrib/VerdiRaft'" ]
 depends: [
-  "coq" {>= "8.6" & < "8.7~"}
-  "verdi" {= "dev"}
+  "coq" {>= "8.7" & < "8.8~"}
+  "verdi" {= "8.7.dev"}
   "StructTact" {= "dev"}
-  "cheerios" {= "dev"}
-  "verdi-cheerios" {= "dev"}
+  "cheerios" {= "8.7.dev"}
+  "verdi-cheerios" {= "8.7.dev"}
 ]
 
 tags: [
