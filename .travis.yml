@@ -9,11 +9,7 @@ addons:
       - aspcud
 env:
   matrix:
-    - MODE=build COQ_VERSION=8.7.dev
-    - MODE=vard COQ_VERSION=8.7.dev OPAMBUILDTEST=1
-    - MODE=vard-serialized COQ_VERSION=8.7.dev OPAMBUILDTEST=1
-    - MODE=vard-log COQ_VERSION=8.7.dev OPAMBUILDTEST=1
-    - MODE=vard-serialized-log COQ_VERSION=8.7.dev OPAMBUILDTEST=1
+    - MODE=build COQ_VERSION=dev
 script: bash -ex .travis-ci.sh
 sudo: false
 notifications:
